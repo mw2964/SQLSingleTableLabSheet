@@ -20,16 +20,16 @@ WHERE name NOT LIKE '%fy';
 -- Q2-4
 SELECT name
 FROM pet
-WHERE LENGTH(owner) = 4;
+WHERE length(owner) = 4;
 
 -- Q2-5
 SELECT DISTINCT owner
 FROM pet
-WHERE LOWER(SUBSTR(owner, 1, 1)) <= 'e'
-AND LOWER(SUBSTR(owner, -1, 1)) <= 'e';
+WHERE lower(substr(owner, 1, 1)) <= 'e'
+AND lower(substr(owner, -1, 1)) <= 'e';
 
 -- Q2-6
 SELECT DISTINCT owner
 FROM pet
-WHERE SUBSTR(owner, 1, 1) IN ('A', 'B', 'C', 'D', 'E')
-AND SUBSTR(owner, -1, 1) IN ('a', 'b', 'c', 'd', 'e');
+WHERE substr(owner, 1, 1) IN ('A', 'B', 'C', 'D', 'E')
+AND substr(owner, -1, 1) IN ('a', 'b', 'c', 'd', 'e');
